@@ -9,7 +9,7 @@ function Header() {
         to="/react-pizza/"
         className="text-lg font-bold tracking-widest text-yellow-100"
       >
-        🍕Fast React Pizza Co.
+        🍕React Pizza Co.
       </Link>
 
       <SearchOrder />
