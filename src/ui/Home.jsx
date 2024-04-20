@@ -1,7 +1,7 @@
-import { useSelector } from 'react-redux';
-import CreateUser from '../features/user/CreateUser';
-import Button from './Button';
-import PizzaSlider from './PizzaSlider';
+import { useSelector } from "react-redux";
+import CreateUser from "../features/user/CreateUser";
+import Button from "./Button";
+import PizzaSlider from "./PizzaSlider";
 
 function Home() {
   const username = useSelector((state) => state.user.username);
@@ -17,10 +17,10 @@ function Home() {
           </span>
         </h1>
 
-        {username === '' ? (
+        {username === "" ? (
           <CreateUser />
         ) : (
-          <Button to="/menu" type="primary">
+          <Button to="/react-pizza/menu" type="primary">
             Continue ordering, {username}
           </Button>
         )}
